@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    background-color: #0e112c;
+    color: aliceblue;
+    padding: 10px 15px;
+    font-family: "Roboto Slab", serif;
+    overflow: hidden;
+    /* position: sticky;
+    top: 0; */
+}
+h1 .logo_2{
+    color: rgb(0, 136, 255);
+}
+h1{
+    display: inline-block;
+    margin-top: 5px;
+    color: rgb(255, 255, 255);    
+} 
+a{
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px;
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+    text-align: center;
+    background-color: rgb(17, 0, 71);
+}
+.main_ul .li_main_ul{
+    display: inline-block;
+    margin-left: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.main_ul{
+    float: right;   
+    list-style: none;
+}
+.main_ul li a:hover{
+    background-color:rgb(101, 183, 255);
+    color: rgb(0, 0, 110);
+    color: rgb(0, 0, 0);
+    font-weight: 700;
+    transition-duration:0.7s ;
+    transition-timing-function:ease-in-out ;
+    transform:scale(1.111);
+}
+.drop_down{
+    position: absolute;
+    display: none;
+}
+.drop_down ul{
+    list-style: none;
+}
+.main_ul li:nth-child(2):hover .drop_down{
+    display: block;
+}
+.main_ul li:nth-child(2):hover i{
+    transform: rotate(180deg);
+}
+.drop_down ul{
+    background-color: #0e112c;
+    border-radius:15px ;
+} 
+.main_ul .drop_down ul li{
+    margin-top: 5px;
+    border-bottom: 1px solid rgb(255, 255, 255);
+    border-radius: 10px;
+}
+.main_ul .drop_down ul li a{
+    width: 80%;
+}
+.main_ul .drop_down ul li a:hover{
+    background-color: rgb(0, 29, 134);
+    color: aqua;
+}
+/* end nav */
+
+/* start body */
+.container{
+    height: 100vh;
+    width: 100%;
+    background-color: #2b2044;
+}
+.container header{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.container header h1 {
+    color: rgb(255, 255, 255); 
+    font-family: 'Times New Roman', Times, serif; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    background: linear-gradient(to right, #5e5e5e , #646397 , hsl(247, 100%, 21%) );
+    padding: 10px 20px;
+    border-radius: 10px; 
+    text-align: center; 
+    font-size: 40px; 
+    font-weight: bold; 
+    margin-top: 20px;
+}
+
+.container header h1 span{
+    color: rgb(0, 136, 255);
+}
+
+.container .cont{
+    width: 80%;
+    height: 38%;
+    /* background-color: rgba(0, 116, 218, 0.304); */
+    padding: 10px 5px;
+    /* border: 3px solid rgba(0, 166, 255, 0.326); */
+    border-radius: 15px;
+    margin: 0 auto;
+    margin-bottom: 25px;
+    cursor: pointer;
+}
+
+.container .cont .sec1{
+    float: left;
+}
+.container .cont .sec2{
+    float: right;
+}
+.container .cont .sec1,.sec2{
+    width: 48%;
+    height: 100%;
+    border: 3px solid #b1b1b1;
+    border-radius: 15px;
+    box-shadow: 7px 7px 4px 0 #0000006a;
+    transition-duration:0.6s ;
+}
+section:hover{
+    transform: scale(1.09);
+}
+.container .head_sec{
+    text-align: center;
+    margin: 10px auto ;
+    width: 70%
+
+}
+
+.container .cont img{
+    text-align: center;
+    width: 18%;
+    display: inline-block;
+ }
+ .cont section p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    text-shadow: 4px 2px 2px #000000f1;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+ }
+ .cont .but {
+    display: block; 
+    text-align: center;
+    margin: 5px auto;
+    width: 150px;
+    height: 50px;
+    background-color: #0e112c;
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    border: none; 
+    border-radius: 15px; 
+    cursor: pointer; 
+    transition-duration:0.5s ;
+}
+
+.cont .but:hover {
+    background-color: #0099ff;
+    color: #000000;
+    transform: scale(1.15); 
+}
+/* end body */
+
+/* responsive */
+
+@media (max-width:800px) {
+    nav h1{
+        font-size: 20px;
+    }
+    nav .main_ul .li_main_ul{
+        margin: 0px;
+        font-size: 12px;
+        margin-top: 7px;
+    }
+    nav a{
+        padding: 7px;
+    }
+}
